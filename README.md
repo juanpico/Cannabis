@@ -1,2 +1,8 @@
 # Cannabis
 Proyecto orientado a evaluar el efecto de indicadores de personalidad en la probabilidad de consumo de cannabis.
+
+La base de datos utilizada (https://archive.ics.uci.edu/ml/datasets/Drug+consumption+(quantified)) contiene información de 1885 adultos para los cuales se tiene información sobre indicadores de personalidad obtenidos a partir de los exámenes NEO PI-R, BIS-11 y ImpSS, que evalúan rasgos psicológicos como el neuroticismo, extraversión, apertura a la experiencia, amabilidad, responsabilidad, impulsividad y búsqueda de sensaciones. Por otro lado, contiene información demográfica sobre los encuestados como edad, género, nivel educativo, país y etnia. Adicionalmente, a los encuestados fueron encuestados con relación a su uso de 18 drogas legales e ilegales (alcohol, anfetaminas, cannabis, cocaína, éxtasis, heroína, etc.),  donde tenían que seleccionar para cada droga si nunca la habían probado (CL0), hace más de una década (CL1), en la década pasada (CL2),  en el último año (CL3), último mes (CL4), última semana (CL5) y último día (CL6),.
+Para este proyecto, se utiliza como variable respuesta si la persona consume marihuana o no, mediante la agrupación de las categorías CL0, CL1, CL2 en la nueva categoría “No consumidor” y la agrupación de las categorías CL3, CL4, CL5 y CL6 en la nueva categoría “Consumidor”.
+
+
+El archivo model.R contiene el preprocesamiento de los datos utilizados, el entrenamiento de diferentes modelos de regresión logística, la comprobación de los supuestos del modelo y diferentes pruebas de hipótesis para responder a las preguntas de interés propuestas.
